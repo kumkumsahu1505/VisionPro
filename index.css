@@ -11,6 +11,7 @@ html,body{
 .main{
     position: relative;
     overflow: hidden;
+    background-color: black;
 }
 .page1{
     height: 100vh;width: 100vw;
@@ -22,7 +23,7 @@ html,body{
     justify-content: space-between;
     align-items: center;
     height: 40px;
-    margin: 5px;
+    /* margin: 5px; */
     padding: 15px;
     width: 100%;
     background-color: white;
@@ -111,15 +112,22 @@ html,body{
     position: relative;
     background-color: black;
 }
+.page2>video{
+    position: relative;
+    height:100%;
+    width: 100%;
+    object-fit: cover;
+}
 .page2>.page2Line{
     color: aliceblue;
-    font-size: 30px;
+    font-size: 50px;
     position:absolute;
-    top: 40%;
+    top: 80%;
     left: 25%;
     width: 50%;
-    line-height: 60px;
+    line-height: 90px;
 }
+
 .watchFilm{
     margin: 20px 40px;
     height: 50px;
@@ -127,7 +135,28 @@ html,body{
     border-radius: 40%;
     position: absolute;
     left: 25%;
-    bottom: -40%;
+    bottom: -20%;
     background-color: orange;
     font-size: 20px;
+}
+.page3{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+}
+.name{
+    display:grid;
+    align-items: center;
+    justify-content: center;
+}
+.vision{
+    height:13vh;
+    width: 40vw;
+    object-fit: cover;
+    margin: 50px;
+}
+.headPhone{
+    height: 43vh;
+    width: 60vw;
+    object-fit: cover;
 }
