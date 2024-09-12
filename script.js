@@ -27,8 +27,7 @@ loco();
 
 gsap.to('.page2Line', {
   y: -800,
-  duration: 25,
-  stagger:1,
+  duration: 2,
   ease:'power1.inOut',
   scrollTrigger: {
     tigger: '.page2Line',
@@ -41,4 +40,31 @@ gsap.to('.page2Line', {
   }
 })
 
+gsap.to('.headPhone',{
+  rotateY:360,
+  yoyo:true,
+  duration:10,
+  stagger:1,
+  repeat:-1,
+  scrollTrigger:{
+    scroller:'.main',
+    trigger:'.headPhone',
+    //  markers:true,
+     start:'5% 45%',
+     end:'100% 10%'
+  }
+})
 
+$(".page3 button").mousemove(function(){
+  $(".page3 button").css({"background-color":"black","color":"white"})
+})
+$(".page3 button").mouseleave(function(){
+  $(".page3 button").css({"background-color":"white","color":"black"})
+})
+
+$(".para button").mousemove(function(){
+  $(".para button").css({"background-color":"orange","color":"black"})
+})
+$(".para button").mouseleave(function(){
+  $(".para button").css({"background-color":"white","color":"black"})
+})
