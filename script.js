@@ -24,34 +24,19 @@ function loco() {
 }
 loco();
 
-
-gsap.to('.page2Line', {
+let t1 = gsap.timeline();
+t1.to('.page2Line', {
   y: -800,
-  duration: 2,
-  ease:'power1.inOut',
+  duration:5,
+  // ease:'power1.inOut',
   scrollTrigger: {
     tigger: '.page2Line',
     scroller: '.main',
-    // pin: true,
-    start: '100% 80%',
-    end: '250% 100%',
+    start: 'top top',
+    end: '450% 100%',
     // markers:true,
-    scrub: 4,
-  }
-})
-
-gsap.to('.headPhone',{
-  rotateY:360,
-  yoyo:true,
-  duration:10,
-  stagger:1,
-  repeat:-1,
-  scrollTrigger:{
-    scroller:'.main',
-    trigger:'.headPhone',
-    //  markers:true,
-     start:'5% 45%',
-     end:'100% 10%'
+    pin:'.page2' ,
+    scrub: 5,
   }
 })
 
@@ -68,3 +53,31 @@ $(".para button").mousemove(function(){
 $(".para button").mouseleave(function(){
   $(".para button").css({"background-color":"white","color":"black"})
 })
+
+t1.from('.page5 h1',{
+    y:800,
+    duration:10,
+    scrollTrigger : {
+     tigger:'.page5 h1',
+     scroller:'.main',
+      start:'top top',
+      // end:'bottom bottom',
+    //  markers:true,
+     pin:'.page5',
+     scrub:20,
+    }
+})
+
+t1.to('.pg5V',{
+  y:-150,
+  left:'5%',
+  right:'5%',
+  duration:5,
+  width:'90%',
+  scrollTrigger:{
+    trigger:'.pg5V',
+    scroller:'.main',
+    start:'top top',
+    scrub:5
+  }
+},"anim")
