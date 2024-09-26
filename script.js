@@ -47,11 +47,11 @@ $(".page3 button").mouseleave(function(){
   $(".page3 button").css({"background-color":"white","color":"black"})
 })
 
-$(".para button").mousemove(function(){
-  $(".para button").css({"background-color":"orange","color":"black"})
+$(".pera button").mousemove(function(){
+  $(".pera button").css({"background-color":"orange","color":"black"})
 })
-$(".para button").mouseleave(function(){
-  $(".para button").css({"background-color":"white","color":"black"})
+$(".pera button").mouseleave(function(){
+  $(".pera button").css({"background-color":"white","color":"black"})
 })
 
 t1.from('.page5 h1',{
@@ -81,3 +81,16 @@ t1.to('.pg5V',{
     scrub:5
   }
 },"anim")
+
+t1.from(".page8 img",{
+  opacity:0,
+  duration:1,
+  scrollTrigger:{
+    trigger:".page8 img",
+    scroller:".main",
+    scrub:5,
+    // markers:true,
+    start:'-100% 20%',
+    end:'-30% top'
+  }
+})
